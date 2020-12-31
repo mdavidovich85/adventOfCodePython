@@ -1,5 +1,5 @@
 import os
-start = "/aocPython/2015/input/inputDay2.txt"
+start = "/adventOfCodePython/2015/input/inputDay2.txt"
 path=os.path.realpath(start)
 # defaults to read
 
