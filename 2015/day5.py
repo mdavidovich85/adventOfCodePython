@@ -1,5 +1,7 @@
 # https://adventofcode.com/2015/day/5
 import os
+import sys
+import re
 start = "/adventOfCodePython/2015/input/inputDay5.txt"
 path=os.path.realpath(start)
 # defaults to read
@@ -41,3 +43,20 @@ while True:
 f.close()
 
 print("Part 1 Answer: "+ str(niceCount))
+
+
+
+# Part 2
+f = open(path)
+lines=[]
+while True:
+    line=f.readline()
+    if not line:
+        break
+        line.strip()
+    lines.append(line)
+f.close()
+
+# https://www.reddit.com/r/adventofcode/comments/3viazx/day_5_solutions/ technojamin
+print("Part 2 Answer: " + str(len([s for s in lines if (re.search(r'(..).*\1', s) and re.search(r'(.).\1', s))])))
+
