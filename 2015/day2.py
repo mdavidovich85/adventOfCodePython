@@ -1,7 +1,6 @@
-import os
-start = "/adventOfCodePython/2015/input/inputDay2.txt"
-path=os.path.realpath(start)
-# defaults to read
+from pathlib import Path
+
+path = Path(__file__).parent / "input/inputDay2.txt"
 
 def sqFt(l,w,h):
     return (2*l*w) + (2*w*h) + (2*h*l)

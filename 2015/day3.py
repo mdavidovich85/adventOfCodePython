@@ -1,7 +1,6 @@
-import os
-start = "/adventOfCodePython/2015/input/inputDay3.txt"
-path=os.path.realpath(start)
-# defaults to read
+from pathlib import Path
+
+path = Path(__file__).parent / "input/inputDay3.txt"
 f = open(path)
 position=0
 coords = [0,0]

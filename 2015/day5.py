@@ -1,10 +1,10 @@
 # https://adventofcode.com/2015/day/5
-import os
+
 import sys
 import re
-start = "/adventOfCodePython/2015/input/inputDay5.txt"
-path=os.path.realpath(start)
-# defaults to read
+from pathlib import Path
+
+path = Path(__file__).parent / "input/inputDay5.txt"
 vowels = "AaEeIiOoUu"
 pairs=["ab","cd","pq","xy"]
 f = open(path)

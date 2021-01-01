@@ -1,8 +1,9 @@
 # https://adventofcode.com/2015/day/6
 import os
 import re
-start = "/adventOfCodePython/2015/input/inputDay6.txt"
-path=os.path.realpath(start)
+from pathlib import Path
+
+path = Path(__file__).parent / "input/inputDay3.txt"
 
 #build grid
 grid={}
